@@ -1,0 +1,11 @@
+{
+  "extends": "./node_modules/@hcengineering/model-rig/profiles/default/tsconfig.json",
+
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./lib",
+    "types": ["node"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  }
+}

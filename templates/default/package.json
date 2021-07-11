@@ -1,0 +1,10 @@
+{
+  "name": "@hcengineering/default-package",
+  "version": "0.6.0",
+  "scripts": {
+  },
+  "devDependencies": {
+  },
+  "#replaces": [
+  ]
+}

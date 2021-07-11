@@ -1,0 +1,31 @@
+{
+  "string": {
+    "More": "Еще...",
+    "Delete": "Удалить",
+    "ShowMenu": "Показать меню",
+    "HideMenu": "Спрятать меню",
+    "Archive": "Архив",
+    "Archived": "Архив",
+    "Open": "Открыть",
+    "General": "Общее",
+    "Members": "Участники",
+    "Application": "Приложение",
+    "View": "Посмотреть",
+    "Leave": "Покинуть",
+    "Joined": "Вы присоединились",
+    "Join": "Присоединиться",
+    "BrowseSpaces": "Обзор пространств",
+    "AccountDisabled": "Аккаунт отключен",
+    "AccountDisabledDescr": "Пожалуйста свяжитесь с администратором",
+    "HelpAndSupport": "Помощь",
+    "HelpCenter": "Центр помощи",
+    "KeyboardShortcuts": "Сочетания клавиш",
+    "Documentation": "Документация",
+    "ContactUs": "Связаться с нами",
+    "OpenPlatformGuide": "Открыть руководство пользователя",
+    "AccessWorkspaceSettings": "Открыть настройки рабочего пространства",
+    "HowToWorkFaster": "Узнайте как работать эффективнее",
+    "HiddenApplication": "Скрытое приложение",
+    "OpenInNewTab": "Открыть в новой вкладке"
+  }
+}

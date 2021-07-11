@@ -1,0 +1,29 @@
+{
+  "string": {
+    "Notification": "Увдомление",
+    "Notifications": "Уведомления",
+    "NoNotifications": "Нет уведомлений",
+    "EmailNotification": "Email",
+    "PlatformNotification": "в системе",
+    "Track": "Отслеживать",
+    "DontTrack": "Не отслеживать",
+    "BrowserNotification": "в браузере",
+    "Remove": "Удалить нотификацию",
+    "RemoveAll": "Удалить все нотификации",
+    "MarkAllAsRead": "Отметить все нотификации как прочитанные",
+    "MarkAsRead": "Отметить нотификация прочитанной",
+    "MarkAsUnread": "Отметить непрочитанным",
+    "Archive": "Архивировать",
+    "Inbox": "Входящие",
+    "Collaborators": "Участники",
+    "Change": "Изменено",
+    "AddedRemoved": "Добавлено/удалено",
+    "YouAddedCollaborators": "Вы были добавлены как участник",
+    "ChangeCollaborators": "изменил(а) участники",
+    "Activity": "Активность",
+    "People": "Люди",
+    "All": "Все",
+    "Read": "Прочитанное",
+    "Unread": "Не прочитанное"
+  }
+}

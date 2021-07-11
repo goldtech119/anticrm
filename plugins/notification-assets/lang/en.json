@@ -1,0 +1,29 @@
+{
+  "string": {
+    "Notification": "Notification",
+    "Notifications": "Notifications",
+    "NoNotifications": "No notifications",
+    "EmailNotification": "Email",
+    "PlatformNotification": "in platform",
+    "Track": "Track",
+    "DontTrack": "Don't track",
+    "BrowserNotification": "in browser",
+    "Remove": "Delete notification",
+    "RemoveAll": "Delete all notifications",
+    "MarkAllAsRead": "Mark all notifications as read",
+    "MarkAsRead": "Mark as read",
+    "MarkAsUnread": "Mark as unread",
+    "Archive": "Archive",
+    "Inbox": "Inbox",
+    "Collaborators": "Collaborators",
+    "Change": "Change",
+    "AddedRemoved": "Added/removed",
+    "YouAddedCollaborators": "You have been added to collaborators",
+    "ChangeCollaborators": "changed collaborators",
+    "Activity": "Activity",
+    "People": "People",
+    "All": "All",
+    "Read": "Read",
+    "Unread": "Unread"
+  }
+}

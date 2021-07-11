@@ -1,0 +1,23 @@
+{
+  "string": {
+    "Requests": "Запросы",
+    "Request": "Запрос",
+    "Approve": "Одобрить",
+    "Approved": "Одобрено",
+    "CreatedRequest": "Создал(а)",
+    "For": "Для",
+    "Change": "Изменить",
+    "Add": "Добавить",
+    "Remove": "Удалить",
+    "Status": "Статус",
+    "Requested": "Запрошено",
+    "Completed": "Выполнен",
+    "Reject": "Отклонить",
+    "Rejected": "Отклонен",
+    "Comment": "Комментировать",
+    "PleaseTypeMessage": "Пожалуйста оставьте коментарий чтобы продолжить...",
+    "NoRequests": "Нет запросов",
+    "Cancel": "Отменить",
+    "Cancelled": "Отменен"
+  }
+}

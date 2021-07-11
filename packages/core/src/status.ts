@@ -1,0 +1,94 @@
+//
+// Copyright © 2023 Hardcore Engineering Inc.
+//
+// Licensed under the Eclipse Public License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License. You may
+// obtain a copy of the License at https://www.eclipse.org/legal/epl-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+import { Asset, IntlString } from '@hcengineering/platform'
+import { Attribute, Doc, Domain, Ref } from './classes'
+import { AggregateValue, AggregateValueData, DocManager, IdMap } from './utils'
+import { WithLookup } from './storage'
+
+/**
+ * @public
+ */
+export interface StatusCategory extends Doc {
+  ofAttribute: Ref<Attribute<Status>>
+  icon: Asset
+  label: IntlString
+  color: number
+  defaultStatusName: string
+  order: number // category order
+}
+/**
+ * @public
+ */
+export const DOMAIN_STATUS = 'status' as Domain
+
+/**
+ * @public
+ *
+ * Status is attached to attribute, and if user attribute will be removed, all status values will be remove as well.
+ */
+export interface Status extends Doc {
+  // We attach to attribute, so we could distinguish between
+  ofAttribute: Ref<Attribute<Status>>
+
+  // Optional category.
+  category?: Ref<StatusCategory>
+
+  // Status with case insensitivity name match will be assumed same.
+  name: string
+
+  // Optional color
+  color?: number
+  // Optional description
+  description?: string
+  // Lexorank rank for ordering.
+  rank: string
+}
+
+/**
+ * @public
+ */
+export class StatusValue extends AggregateValue {
+  constructor (
+    readonly name: string | undefined,
+    readonly color: number | undefined,
+    readonly values: AggregateValueData[]
+  ) {
+    super(name, values)
+  }
+}
+
+/**
+ * @public
+ *
+ * Allow to query for status keys/values.
+ */
+export class StatusManager extends DocManager {
+  get (ref: Ref<WithLookup<Status>>): WithLookup<Status> | undefined {
+    return this.getIdMap().get(ref) as WithLookup<Status>
+  }
+
+  getDocs (): Array<WithLookup<Status>> {
+    return this.docs as Status[]
+  }
+
+  getIdMap (): IdMap<WithLookup<Status>> {
+    return this.byId as IdMap<WithLookup<Status>>
+  }
+
+  filter (predicate: (value: Status) => boolean): Status[] {
+    return this.getDocs().filter(predicate)
+  }
+}

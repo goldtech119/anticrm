@@ -1,0 +1,20 @@
+{
+  "string": {
+    "Cancel": "Отменить",
+    "Templates": "Текстовые шаблоны",
+    "TemplatesHeader": "ТЕКСТОВЫЕ ШАБЛОНЫ",
+    "CreateTemplate": "СОЗДАТЬ ШАБЛОН",
+    "SaveTemplate": "Сохранить шаблон",
+    "EditTemplate": "Редактировать шаблон",
+    "ViewTemplate": "Просмотреть шаблон",
+    "Suggested": "РЕКОМЕНДУЕМЫЕ",
+    "SearchTemplate": "Поиск шаблона",
+    "TemplatePlaceholder": "Новый шаблон",
+    "Title": "Заголовок",
+    "Message": "Сообщение",
+    "Field": "Поле",
+    "TemplateCategory": "Группа шаблонов",
+    "CreateTemplateCategory": "Создать группу",
+    "Copy": "Копировать" 
+  }
+}

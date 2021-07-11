@@ -1,0 +1,31 @@
+{
+  "string": {
+    "More": "More...",
+    "Delete": "Delete",
+    "ShowMenu": "Show menu",
+    "HideMenu": "Hide menu",
+    "Archive": "Archive",
+    "Archived": "Archive",
+    "Open": "Open",
+    "General": "General",
+    "Members": "Members",
+    "Application": "Application",
+    "View": "View",
+    "Leave": "Leave",
+    "Joined": "Joined",
+    "Join": "Join",
+    "BrowseSpaces": "Browse spaces",
+    "AccountDisabled": "Account is disabled",
+    "AccountDisabledDescr": "Please contact the workspace administrator",
+    "HelpAndSupport": "Help & Support",
+    "HelpCenter": "Help Center",
+    "KeyboardShortcuts": "Keyboard Shortcuts",
+    "Documentation": "Documentation",
+    "ContactUs": "Contact us",
+    "OpenPlatformGuide": "Open Platform Guide",
+    "AccessWorkspaceSettings": "Access your workspace settings",
+    "HowToWorkFaster": "Learn how to work faster",
+    "HiddenApplication": "Hidden application",
+    "OpenInNewTab": "Open in a new tab"
+  }
+}

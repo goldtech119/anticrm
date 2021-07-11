@@ -1,0 +1,45 @@
+{
+  "name": "@hcengineering/notification",
+  "version": "0.6.14",
+  "main": "lib/index.js",
+  "author": "Anticrm Platform Contributors",
+  "license": "EPL-2.0",
+  "template": "@hcengineering/platform-package",
+  "scripts": {
+    "build": "heft build",
+    "lint:fix": "eslint --fix src",
+    "lint": "eslint src",
+    "format": "prettier --write src && eslint --fix src",
+    "build:watch": "tsc"
+  },
+  "devDependencies": {
+    "@hcengineering/platform-rig": "^0.6.0",
+    "svelte-loader": "^3.1.3",
+    "sass": "^1.53.0",
+    "svelte-preprocess": "5.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.4.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "prettier-plugin-svelte": "^2.8.0",
+    "eslint": "^8.26.0",
+    "prettier": "^2.7.1",
+    "svelte-check": "3.2.0",
+    "@types/heft-jest": "^1.0.3",
+    "@rushstack/heft": "^0.47.9"
+  },
+  "dependencies": {
+    "@hcengineering/platform": "^0.6.9",
+    "@hcengineering/core": "^0.6.27",
+    "@hcengineering/preference": "^0.6.8",
+    "@hcengineering/setting": "^0.6.9",
+    "@hcengineering/ui": "^0.6.10"
+  },
+  "repository": "https://github.com/hcengineering/anticrm",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}

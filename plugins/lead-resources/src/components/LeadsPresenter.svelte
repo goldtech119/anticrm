@@ -1,0 +1,33 @@
+<!--
+// Copyright © 2020, 2021 Anticrm Platform Contributors.
+// Copyright © 2021 Hardcore Engineering Inc.
+// 
+// Licensed under the Eclipse Public License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License. You may
+// obtain a copy of the License at https://www.eclipse.org/legal/epl-2.0
+// 
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// 
+// See the License for the specific language governing permissions and
+// limitations under the License.
+-->
+<script lang="ts">
+  import type { Customer } from '@hcengineering/lead'
+  import { Icon, tooltip } from '@hcengineering/ui'
+  import LeadsPopup from './LeadsPopup.svelte'
+  import leads from '../plugin'
+
+  export let value: number
+  export let object: Customer
+</script>
+
+{#if value && value > 0}
+  <div
+    class="sm-tool-icon"
+    use:tooltip={{ label: leads.string.Leads, component: LeadsPopup, props: { value: object } }}
+  >
+    <span class="icon"><Icon icon={leads.icon.Lead} size={'small'} /></span>&nbsp;{value}
+  </div>
+{/if}
